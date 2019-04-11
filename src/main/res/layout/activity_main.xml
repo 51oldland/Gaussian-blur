@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:src="@mipmap/image_loading"
+        android:layout_height="200dp" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textSize="15sp"
+        android:text="      How to become a full screen developer?
+Ah, wrong, it should be how to become a full stack developer.
+Read the fucking code!
+
+
+
+How to become a full screen developer?
+Ah, wrong, it should be how to become a full stack developer.
+Read the fucking code!
+
+
+
+How to become a full screen developer?
+Ah, wrong, it should be how to become a full stack developer.
+Read the fucking code!"
+        android:layout_height="match_parent" />
+
+
+    <include layout="@layout/layout_main_menu" />
+
+    <include layout="@layout/layout_main_more_menu" />
+
+</android.support.design.widget.CoordinatorLayout>

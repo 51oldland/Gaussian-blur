@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|end"
+    android:background="#00000000"
+    android:clipChildren="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_home"
+            style="@style/MainMenuLinearStyle">
+
+            <ImageView
+                android:id="@+id/iv_menu_home"
+                style="@style/MainMenuImageStyle"
+                android:src="@drawable/menu_home_select" />
+
+            <TextView
+                android:id="@+id/tv_menu_home"
+                style="@style/MainMenuTextStyle"
+                android:layout_below="@id/iv_menu_home"
+                android:text="首页" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_project"
+            style="@style/MainMenuLinearStyle">
+
+            <ImageView
+                android:id="@+id/iv_menu_project"
+                style="@style/MainMenuImageStyle"
+                android:src="@drawable/menu_project_select" />
+
+            <TextView
+                android:id="@+id/tv_menu_project"
+                style="@style/MainMenuTextStyle"
+                android:layout_below="@id/iv_menu_project"
+                android:text="项目" />
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_all_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-15dp"
+            android:rotation="45"
+            android:src="@drawable/ic_clear" />
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_client"
+            style="@style/MainMenuLinearStyle">
+
+            <ImageView
+                android:id="@+id/iv_menu_client"
+                style="@style/MainMenuImageStyle"
+                android:src="@drawable/menu_client_select" />
+
+            <TextView
+                android:id="@+id/tv_menu_client"
+                style="@style/MainMenuTextStyle"
+                android:layout_below="@id/iv_menu_client"
+                android:text="招商" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_my"
+            style="@style/MainMenuLinearStyle">
+
+            <ImageView
+                android:id="@+id/iv_menu_my"
+                style="@style/MainMenuImageStyle"
+                android:src="@drawable/menu_my_select" />
+
+            <TextView
+                android:id="@+id/tv_main_home"
+                style="@style/MainMenuTextStyle"
+                android:layout_below="@id/iv_menu_my"
+                android:text="我的" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
